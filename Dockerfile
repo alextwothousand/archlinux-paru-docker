@@ -22,3 +22,7 @@ RUN \
     git clone https://aur.archlinux.org/paru.git && \
     cd paru && \
     makepkg -si --needed --noconfirm
+
+# perform cleanup
+RUN \
+    rm -rf .cache paru/
